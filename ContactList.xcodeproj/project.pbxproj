@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		ED1D066E2A5AABC500DBA8D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D066D2A5AABC500DBA8D2 /* AppDelegate.swift */; };
 		ED1D06702A5AABC500DBA8D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D066F2A5AABC500DBA8D2 /* SceneDelegate.swift */; };
-		ED1D06722A5AABC500DBA8D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D06712A5AABC500DBA8D2 /* ViewController.swift */; };
 		ED1D06752A5AABC500DBA8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1D06732A5AABC500DBA8D2 /* Main.storyboard */; };
 		ED1D06772A5AABC700DBA8D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED1D06762A5AABC700DBA8D2 /* Assets.xcassets */; };
 		ED1D067A2A5AABC700DBA8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1D06782A5AABC700DBA8D2 /* LaunchScreen.storyboard */; };
+		ED1D06892A5AB05000DBA8D2 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D06882A5AB05000DBA8D2 /* ContactListViewController.swift */; };
+		ED1D068B2A5AB0A300DBA8D2 /* ContactDitailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D068A2A5AB0A300DBA8D2 /* ContactDitailsViewController.swift */; };
+		ED1D068D2A5AB0F900DBA8D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D068C2A5AB0F900DBA8D2 /* Person.swift */; };
+		ED1D068F2A5AB92700DBA8D2 /* PersonDitailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D068E2A5AB92700DBA8D2 /* PersonDitailsViewController.swift */; };
+		ED1D06912A5ABBFF00DBA8D2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D06902A5ABBFF00DBA8D2 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED1D066A2A5AABC500DBA8D2 /* ContactLisr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactLisr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1D066A2A5AABC500DBA8D2 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1D066D2A5AABC500DBA8D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED1D066F2A5AABC500DBA8D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED1D06712A5AABC500DBA8D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED1D06742A5AABC500DBA8D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED1D06762A5AABC700DBA8D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED1D06792A5AABC700DBA8D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED1D067B2A5AABC700DBA8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1D06882A5AB05000DBA8D2 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		ED1D068A2A5AB0A300DBA8D2 /* ContactDitailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDitailsViewController.swift; sourceTree = "<group>"; };
+		ED1D068C2A5AB0F900DBA8D2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		ED1D068E2A5AB92700DBA8D2 /* PersonDitailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDitailsViewController.swift; sourceTree = "<group>"; };
+		ED1D06902A5ABBFF00DBA8D2 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,7 @@
 		ED1D066B2A5AABC500DBA8D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED1D066A2A5AABC500DBA8D2 /* ContactLisr.app */,
+				ED1D066A2A5AABC500DBA8D2 /* ContactList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,23 +64,75 @@
 		ED1D066C2A5AABC500DBA8D2 /* ContactLisr */ = {
 			isa = PBXGroup;
 			children = (
-				ED1D066D2A5AABC500DBA8D2 /* AppDelegate.swift */,
-				ED1D066F2A5AABC500DBA8D2 /* SceneDelegate.swift */,
-				ED1D06712A5AABC500DBA8D2 /* ViewController.swift */,
-				ED1D06732A5AABC500DBA8D2 /* Main.storyboard */,
-				ED1D06762A5AABC700DBA8D2 /* Assets.xcassets */,
-				ED1D06782A5AABC700DBA8D2 /* LaunchScreen.storyboard */,
-				ED1D067B2A5AABC700DBA8D2 /* Info.plist */,
+				ED1D06812A5AAC1A00DBA8D2 /* App */,
+				ED1D06822A5AAC3100DBA8D2 /* ViewControllers */,
+				ED1D06922A5ABC0600DBA8D2 /* Sercices */,
+				ED1D06872A5AAF5500DBA8D2 /* Models */,
+				ED1D06832A5AAC4600DBA8D2 /* Storyboards */,
+				ED1D06842A5AAC6C00DBA8D2 /* Resourses */,
 			);
 			path = ContactLisr;
+			sourceTree = "<group>";
+		};
+		ED1D06812A5AAC1A00DBA8D2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ED1D066D2A5AABC500DBA8D2 /* AppDelegate.swift */,
+				ED1D066F2A5AABC500DBA8D2 /* SceneDelegate.swift */,
+				ED1D067B2A5AABC700DBA8D2 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ED1D06822A5AAC3100DBA8D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED1D06882A5AB05000DBA8D2 /* ContactListViewController.swift */,
+				ED1D068A2A5AB0A300DBA8D2 /* ContactDitailsViewController.swift */,
+				ED1D068E2A5AB92700DBA8D2 /* PersonDitailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED1D06832A5AAC4600DBA8D2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ED1D06732A5AABC500DBA8D2 /* Main.storyboard */,
+				ED1D06782A5AABC700DBA8D2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED1D06842A5AAC6C00DBA8D2 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				ED1D06762A5AABC700DBA8D2 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		ED1D06872A5AAF5500DBA8D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED1D068C2A5AB0F900DBA8D2 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED1D06922A5ABC0600DBA8D2 /* Sercices */ = {
+			isa = PBXGroup;
+			children = (
+				ED1D06902A5ABBFF00DBA8D2 /* DataStore.swift */,
+			);
+			path = Sercices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED1D06692A5AABC500DBA8D2 /* ContactLisr */ = {
+		ED1D06692A5AABC500DBA8D2 /* ContactList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED1D067E2A5AABC700DBA8D2 /* Build configuration list for PBXNativeTarget "ContactLisr" */;
+			buildConfigurationList = ED1D067E2A5AABC700DBA8D2 /* Build configuration list for PBXNativeTarget "ContactList" */;
 			buildPhases = (
 				ED1D06662A5AABC500DBA8D2 /* Sources */,
 				ED1D06672A5AABC500DBA8D2 /* Frameworks */,
@@ -82,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = ContactLisr;
+			name = ContactList;
 			productName = ContactLisr;
-			productReference = ED1D066A2A5AABC500DBA8D2 /* ContactLisr.app */;
+			productReference = ED1D066A2A5AABC500DBA8D2 /* ContactList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED1D06652A5AABC500DBA8D2 /* Build configuration list for PBXProject "ContactLisr" */;
+			buildConfigurationList = ED1D06652A5AABC500DBA8D2 /* Build configuration list for PBXProject "ContactList" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED1D06692A5AABC500DBA8D2 /* ContactLisr */,
+				ED1D06692A5AABC500DBA8D2 /* ContactList */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED1D06722A5AABC500DBA8D2 /* ViewController.swift in Sources */,
+				ED1D06912A5ABBFF00DBA8D2 /* DataStore.swift in Sources */,
+				ED1D06892A5AB05000DBA8D2 /* ContactListViewController.swift in Sources */,
+				ED1D068B2A5AB0A300DBA8D2 /* ContactDitailsViewController.swift in Sources */,
+				ED1D068F2A5AB92700DBA8D2 /* PersonDitailsViewController.swift in Sources */,
+				ED1D068D2A5AB0F900DBA8D2 /* Person.swift in Sources */,
 				ED1D066E2A5AABC500DBA8D2 /* AppDelegate.swift in Sources */,
 				ED1D06702A5AABC500DBA8D2 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4D33S9Y62;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactLisr/Info.plist;
+				INFOPLIST_FILE = ContactLisr/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +366,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = openYourMind.ContactLisr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B4D33S9Y62;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactLisr/Info.plist;
+				INFOPLIST_FILE = ContactLisr/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,16 +397,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = openYourMind.ContactLisr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED1D06652A5AABC500DBA8D2 /* Build configuration list for PBXProject "ContactLisr" */ = {
+		ED1D06652A5AABC500DBA8D2 /* Build configuration list for PBXProject "ContactList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED1D067C2A5AABC700DBA8D2 /* Debug */,
@@ -348,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED1D067E2A5AABC700DBA8D2 /* Build configuration list for PBXNativeTarget "ContactLisr" */ = {
+		ED1D067E2A5AABC700DBA8D2 /* Build configuration list for PBXNativeTarget "ContactList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED1D067F2A5AABC700DBA8D2 /* Debug */,
