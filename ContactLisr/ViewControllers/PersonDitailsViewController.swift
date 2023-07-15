@@ -12,12 +12,12 @@ final class PersonDitailsViewController: UIViewController {
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     
-    var personList: Person!
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "\(personList.name) \(personList.surname)"
-        phoneLabel.text = personList.phone
-        emailLabel.text = personList.email
+        title = person.fullName
+        phoneLabel.text = person.phone
+        emailLabel.text = person.email
     }
 }

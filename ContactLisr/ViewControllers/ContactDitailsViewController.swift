@@ -9,7 +9,7 @@ import UIKit
 
 final class ContactDitailsViewController: UITableViewController {
     
-    var personList = Person.getPerson()
+    var persons: [Person] = []
 
     // MARK: - Table view data source
     
@@ -18,7 +18,7 @@ final class ContactDitailsViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        personList.count
+        persons.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,29 +27,30 @@ final class ContactDitailsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "phone", for: indexPath)
-            var content = cell.defaultContentConfiguration()
-            let phone = personList[indexPath.section]
-            content.text = phone.phone
-            cell.contentConfiguration = content
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "email", for: indexPath)
-            var content = cell.defaultContentConfiguration()
-            let email = personList[indexPath.section]
-            content.text = email.email
-            cell.contentConfiguration = content
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let person = persons[indexPath.section]
+        var content = cell.defaultContentConfiguration()
+        
+        switch indexPath.row {
+        case 0:
+            content.text = person.phone
+        default:
+            content.text = person.email
         }
+        
+        cell.contentConfiguration = content
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        "\(personList[section].name) \(personList[section].surname)"
+        persons[section].fullName
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.tintColor = .systemGray6
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

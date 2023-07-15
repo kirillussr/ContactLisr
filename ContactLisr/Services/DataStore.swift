@@ -9,6 +9,10 @@ import Foundation
 
 final class DataStore {
     
+    static let shared = DataStore()
+    private init(){}
+    
+    
     let names = [
         "Marty",
         "Sid",

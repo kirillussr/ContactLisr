@@ -17,6 +17,7 @@
 		ED1D068D2A5AB0F900DBA8D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D068C2A5AB0F900DBA8D2 /* Person.swift */; };
 		ED1D068F2A5AB92700DBA8D2 /* PersonDitailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D068E2A5AB92700DBA8D2 /* PersonDitailsViewController.swift */; };
 		ED1D06912A5ABBFF00DBA8D2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1D06902A5ABBFF00DBA8D2 /* DataStore.swift */; };
+		EDF6AC212A629FEB00422A87 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF6AC202A629FEB00422A87 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		ED1D068C2A5AB0F900DBA8D2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		ED1D068E2A5AB92700DBA8D2 /* PersonDitailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDitailsViewController.swift; sourceTree = "<group>"; };
 		ED1D06902A5ABBFF00DBA8D2 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		EDF6AC202A629FEB00422A87 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 			children = (
 				ED1D06812A5AAC1A00DBA8D2 /* App */,
 				ED1D06822A5AAC3100DBA8D2 /* ViewControllers */,
-				ED1D06922A5ABC0600DBA8D2 /* Sercices */,
+				ED1D06922A5ABC0600DBA8D2 /* Services */,
 				ED1D06872A5AAF5500DBA8D2 /* Models */,
 				ED1D06832A5AAC4600DBA8D2 /* Storyboards */,
 				ED1D06842A5AAC6C00DBA8D2 /* Resourses */,
@@ -90,6 +92,7 @@
 				ED1D06882A5AB05000DBA8D2 /* ContactListViewController.swift */,
 				ED1D068A2A5AB0A300DBA8D2 /* ContactDitailsViewController.swift */,
 				ED1D068E2A5AB92700DBA8D2 /* PersonDitailsViewController.swift */,
+				EDF6AC202A629FEB00422A87 /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -119,12 +122,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		ED1D06922A5ABC0600DBA8D2 /* Sercices */ = {
+		ED1D06922A5ABC0600DBA8D2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				ED1D06902A5ABBFF00DBA8D2 /* DataStore.swift */,
 			);
-			path = Sercices;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF6AC212A629FEB00422A87 /* TabBarViewController.swift in Sources */,
 				ED1D06912A5ABBFF00DBA8D2 /* DataStore.swift in Sources */,
 				ED1D06892A5AB05000DBA8D2 /* ContactListViewController.swift in Sources */,
 				ED1D068B2A5AB0A300DBA8D2 /* ContactDitailsViewController.swift in Sources */,
